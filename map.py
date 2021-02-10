@@ -4,8 +4,8 @@ import sys
 import pygame
 import requests
 
-param = {'ll': ','.join([input('ll(1):'), input('ll(2):')]),
-         'spn': ','.join([input('spn(1):'), input('spn(2):')]),
+param = {'ll': input('ll:'),
+         'spn': (input('spn:')),
          'l': 'map'}
 map_request = "http://static-maps.yandex.ru/1.x/?ll={}&spn={}&l={}".format(param['ll'],
                                                                            param['spn'],
